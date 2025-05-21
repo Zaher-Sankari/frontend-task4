@@ -1,0 +1,609 @@
+@font-face {
+    font-family: "Guilda Regular";
+    src: url("./../fonts/Gilda_Display/GildaDisplay-Regular.ttf");
+}
+/* Global Variables*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Guilda Regular",sans-serif;
+}
+p, li,a{
+    font-family: "Urbanist",sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #595959;
+}
+.plr-120{
+    padding-left: 8.3333vw;
+    padding-right: 8.3333vw;
+}
+.pt-100{
+    padding-top: 100px;
+}
+.pb-100{
+    padding-bottom: 100px;
+}
+.p-60{
+    padding-top: 60px;
+}
+ul{
+    list-style: none;
+}
+section,footer{
+    margin-left: 8.3333vw;
+    margin-right: 8.3333vw;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* End Global Variables*/
+
+/* Navigation Bar*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 44px;
+    align-items: center;
+    height: 44px;
+    margin: 10px 8.3333vw;
+    width: 83.3333vw;
+}
+/* End Navigation Bar*/
+
+/* Hero Section*/
+header {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+header h1 {
+    font-size:9vw;
+    width: 70vw;
+    text-align: center;
+    font-weight: 300;
+    margin: 0 auto;
+}
+header h1 span,
+#guide h1 span,
+#guide p span {
+    color: #25A59E;
+}
+header .circle{
+    width:45vw;
+    height: 45vw;
+    background-color:#EE8F39 ;
+    border-radius: 100%;
+    outline: 1px solid #EE8F39;
+    outline-offset:25px ;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -2;
+}
+header .shadow-circle{
+    width:45vw;
+    height: 45vw;
+    border-radius: 100%;
+    background-color:#44D5CD ;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    filter: blur(100px);
+    z-index: -3;
+}
+header .selfie {
+    width: fit-content;
+    position: absolute;
+    transform: translateX(-50%);
+    bottom: 8%;
+    left: 50%;
+    z-index: 0;
+}
+header .banner{
+    position: absolute;
+    bottom: 0;
+    color: #ffffff;
+    background-color: #25A59E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 50px;
+    font-family: 'Urbanist';
+    font-weight: 600;
+    line-height: 32px;
+    margin: 0 8.3333vw;
+    width: 83.3333vw;
+}
+header .banner-mid p{
+    font-family: 'Guilda Regular';
+    font-size: 24px;
+    line-height: 40px;
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    padding: 0 32px;
+    text-align: center;
+}
+header .banner-left, .banner-right{
+    padding:0 24px;
+    font-size: 16px;
+}
+/* End Hero Section*/
+
+/*Find your Best Destination Section*/
+#destination .top-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+}
+#destination .top-container h1 {
+    font-size: 72px;
+    font-weight: 400;
+    max-width: 50%;
+}
+#destination .text-input p {
+    margin-bottom: 24px;
+    font-size: 18px;
+    color: #595959;
+}
+#destination .search-bar{
+    display: flex;
+    align-items: center;
+    width: 400px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    padding: 8px 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+#destination input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 14px;
+    color: #555;
+}
+#destination .search-bar > img{
+    padding-right: 12px;
+}
+#destination .search-button{
+    background-color: #EE8F39;
+    padding: 8px;
+    border-radius: 50%;
+    position: relative;
+    width: 35px;
+    height: 35px;
+}
+#destination .search-button img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#destination .cards-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 60px auto 0;
+    padding: 0 32px;
+}
+.cards-container .card {
+    width: 370px;
+    max-width: calc((100% - 10vw) / 3);
+    box-shadow: -55.45px 50.41px 98px 0px #3736640A,105.45px 50.41px 78.04px 0px #3736640D;
+    padding: 16px;
+}
+.cards-container .card > p {
+    font-family: "Urbanist";
+    font-weight: 600;
+    margin-bottom: 8px;
+    margin-top: 28px;
+}
+.cards-container .card > img{
+    width: 100%;
+}
+.cards-container .card-info {
+    display: flex;
+    align-items: center;
+}
+.cards-container .card-info img {
+    width: 24px;
+    color: #25A59E;
+    margin-right: 8px;
+}
+.cards-container .card-info p {
+    color: #737373;
+    font-family: "Urbanist";
+    font-weight: 600;
+}
+/*End Destination Section*/
+
+/* Why Must Choose you Section*/
+#choose .choose-info{
+    max-width:62.2361vw;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+}
+#choose .choose-info h1 {
+    font-size:72px ;
+    font-weight: 400;
+    font-family: 'Guilda Regular';
+    margin-bottom: 24px;
+}
+#choose .choose-info p{
+    font-family: "Urbanist";
+    font-weight: 500;
+    font-size: 19px;
+    color: #737373;
+    line-height: 32px;
+}
+#choose .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    margin-top: 60px;
+}
+#choose .container-white, .container-aqua{
+    width: calc((100% - 48px) / 3); 
+    padding: 40px 28px 0 28px;
+}
+#choose .container h3{
+    font-size: 39px;
+    margin-bottom: 20px;
+    line-height: 62px;
+}
+#choose .container p{
+    font-size: 18px;
+    color: #737373;
+}
+#choose .more-details{
+display: flex;
+justify-content: flex-end;
+align-items: center;
+padding-top: 80px;
+padding-bottom: 48px;
+}
+#choose .more-details img{
+    margin-left: 12px;
+}
+#choose .container-white{
+    border-top: 5px solid #25A59E;
+}
+#choose .container-aqua{
+    background-color: #25A59E;
+}
+#choose .container-aqua h3{
+    color: #ffffff;
+}
+#choose .container-aqua p{
+    color: #FFFFFFCC;
+}
+/* End Choose Section*/
+
+/* guide Section*/
+#guide {
+    display: flex;
+    justify-content: space-between;
+}
+#guide .info{
+    width: 534px;
+    margin-top: 145px;
+}
+#guide .info h1 {
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 84px;
+    margin-bottom: 28px;
+}
+#guide .info p {
+    font-size: 18px;
+    color: #595959;
+    margin-bottom: 48px;
+
+}
+#guide .info .seeMore-btn{
+    padding: 16px 32px;
+    border: none;
+    background-color: #25A59E;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: "Urbanist";
+    font-weight: 500;
+}
+#guide .info .discover-btn{
+    border: none;
+    background: none;
+    border-bottom: 1px solid #33333399;
+    color: #737373;
+    font-size: 18px;
+    font-family: "Urbanist";
+    font-weight: 500;
+    margin-left: 32px;
+}
+#guide .guide-img-container{
+    width: 550px;
+    position: relative;
+}
+#guide .guide-img-container .people{
+    position: absolute;
+    bottom: 0;
+    left: -40px;
+}
+#guide .guide-img-container .shape{
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    z-index: -1;
+}
+/* End guide Section*/
+
+/* Video Section*/
+#video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+}
+#video h1 {
+    text-align: center;
+    width: 47.2222vw;
+    font-size: 72px;
+    margin-bottom: 48px;
+    font-weight: 400;
+    line-height: 84px;
+}
+#video .video {
+    position: relative;
+    width: 100%;
+}
+#video .video .background {
+    display: block;
+    width: 100%;
+}
+#video .video .video-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 131px;
+}
+/* End Video Section*/
+
+/* Footer Section*/
+footer .offer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 83.3333vw;
+    margin: 0 auto;
+    margin-bottom: 48px;
+}
+footer .offer h1 {
+    font-size: 72px;
+    line-height: 84px;
+}
+footer .click-here-btn{
+    padding: 16px 32px;
+    height: 50%;
+    border: none;
+    color: #ffffff;
+    background-color: #25A59E;
+    font-size: 18px;
+    font-family: "Urbanist";
+    font-weight: 500;
+}
+footer .divider{
+    border-bottom: 1px solid #D9D9D9;
+}
+
+footer .travel-footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+footer .contact-info{
+    width: 300px;
+}
+footer .contact-info h3 {
+    color: #25A59E;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 10%;
+}
+footer .contact-info p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    color: #595959;
+    margin-top: 20px;
+    margin-bottom: 48px;
+}
+footer .contact-info ul {
+    display: flex;
+    align-items: center;
+}
+footer .contact-info ul li {
+    margin-right: 32px;
+}
+footer .footer-links{
+    position: relative;
+    width: 475px;
+}
+footer .footer-links ul {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+
+}
+footer .footer-links ul li {
+    margin-right: 60px;
+    text-wrap: nowrap;
+    font-size: 18px;
+    font-weight: 600;
+    color: #595959;
+}
+
+footer .footer-links img {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+/* End footer Section*/
+
+/* Media Queries */
+
+@media (max-width: 1024px) {
+    .plr-120,
+    section,
+    footer {
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  
+    nav {
+      flex-direction: column;
+      height: auto;
+      gap: 16px;
+      width: 100%;
+      margin: 20px auto;
+    }
+  
+    header h1 {
+      font-size: 11vw;
+      width: 90vw;
+    }
+  
+    header .circle,
+    header .shadow-circle {
+      width: 65vw;
+      height: 65vw;
+    }
+  
+    header .banner {
+      flex-direction: column;
+      text-align: center;
+      gap: 16px;
+      padding: 24px 32px;
+    }
+  
+    header .banner-mid p {
+      border-left: none;
+      border-right: none;
+      padding: 0;
+    }
+  
+    /* Destination Section */
+    #destination .top-container {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 32px;
+    }
+  
+    #destination .top-container h1 {
+      font-size: 48px;
+      max-width: 100%;
+    }
+  
+    #destination .cards-container {
+      justify-content: center;
+      gap: 32px;
+      padding: 0;
+    }
+    .cards-container .card:not(:first-child){
+        display: none;
+    }
+    .cards-container .card {
+      max-width: 100%;
+      width: 90%;
+    }
+  
+    /* Choose Section */
+    #choose .container {
+      flex-direction: column;
+      gap: 40px;
+    }
+  
+    #choose .container-white,
+    #choose .container-aqua {
+      width: 100%;
+    }
+  
+    /* Guide Section */
+    #guide {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+  
+    #guide .info {
+      width: 100%;
+      text-align: center;
+      margin-top: 60px;
+    }
+  
+    #guide .guide-img-container {
+      width: 100%;
+      text-align: center;
+    }
+  
+    #guide {
+        position: static;
+    }
+  
+    /* Video Section */
+    #video h1 {
+      font-size: 48px;
+      width: 90vw;
+      line-height: 60px;
+    }
+  
+    /* Footer */
+    footer .offer {
+      flex-direction: column;
+      gap: 24px;
+      text-align: center;
+    }
+  
+    footer .offer h1 {
+      font-size: 48px;
+      line-height: 60px;
+    }
+  
+    footer .travel-footer {
+      flex-direction: column;
+      gap: 60px;
+      margin-top: 60px;
+    }
+  
+    footer .contact-info,
+    footer .footer-links {
+      width: 100%;
+      text-align: center;
+    }
+  
+    footer .footer-links ul {
+      position: static;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+  
+    footer .footer-links img {
+      display: none;
+    }
+    #destination .top-container h1 {
+        width: 100%;
+    }
+  }
+  
